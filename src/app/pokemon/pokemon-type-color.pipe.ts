@@ -27,24 +27,25 @@ export class PokemonTypeColorPipe implements PipeTransform {
         color = 'blue lighten-3';
         break;
       case 'Poison':
-        color = 'deep-purple lighten-1';
+        color = 'deep-purple accent-1';
         break;
       case 'Fée':
         color = 'pink lighten-4';
         break;
       case 'Psy':
-        color = 'deep-purple lighten-2';
+        color = 'deep-purple darken-2';
         break;
       case 'Electrik':
-        color = 'line accent-1';
+        color = 'lime accent-1';
         break;
       case 'Combat':
         color = 'deep-orange';
         break;
       default:
-        color = '#f44336';
+        color = 'grey';
         break;
     }
-    return 'chip' + color;
+  
+    return 'chip ' + color;
   }
 }
